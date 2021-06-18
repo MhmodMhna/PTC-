@@ -293,7 +293,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item active">
-                                    <a href="" class="nav-link">
+                                    <a href="{{url('/')}}" class="nav-link">
                                         <span class="title">البحث الاجتماعي</span>
                                     </a>
                                 </li>
@@ -327,487 +327,173 @@
                     <div class="page-bar">
                         <ul class="page-breadcrumb">
                             <li>
-                                <span>شؤون الطلبة - البحث الاجتماعي</span>
+                                <span>شؤوون الطلبة - استمارة البحث الاجتماعي</span>
                             </li>
                         </ul>
+                        <div class="page-toolbar">
 
-                    </div>
-
-                    <br>
-                    <form class="form-horizontal form-bordered form-row-stripped" role="form" action="create1" method="post">
-                        @csrf
-                        <div class="form-body">
-                            <div class="form-group">
-                                <label class="control-label col-md-2">اسم الاخ/ت  : </label>
-                                <div class="col-md-4">
-                                    <input  name="bro_name" type="text" class="form-control" >
-                                </div>
-                                <label class="control-label col-md-2">الجامعة/الكلية : </label>
-                                <div class="col-md-4">
-                                    <input name="bro_college" type="text" class="form-control" >
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="control-label col-md-2">المستوى :  </label>
-                                <div class="col-md-4">
-                                    <input  name="bro_level" type="text" class="form-control" >
-                                </div>
-                                <label class="control-label col-md-2">اذا كان يحصل على مساعدات : </label>
-                                <div class="col-md-4">
-                                    <input name="bro_get_help" type="text" class="form-control" >
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-2">قيمة المساعدة : </label>
-                                <div class="col-md-4">
-                                    <input  name="bro_aid" type="text" class="form-control" >
-                                </div>
-                                <label class="control-label col-md-2">ملاحظات : </label>
-                                <div class="col-md-4">
-                                    <input name="bro_notes" type="text" class="form-control" >
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                            <!--النهاية -->
                         </div>
-
-                    </form>
-
-                    <!-- بيانات الطالب-->
-                    <div class="row">
+                    </div>
+                    <!-- END PAGE BAR -->
+                    <!-- END PAGE HEADER-->
+                    <br>
+                    <div class="page-content-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="alert alert-info">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fa fa-angle-double-left"></i> صفحة البحث الاجتماعي وجدت لمساعدة الطلبة وتحديث بياناتهم لدى الكلية وصندوق الإقراض.
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-double-left"></i> يتم تعبئة استمارة البحث الاجتماعي بالبيانات الصحيحة.
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-double-left"></i> الطالب مسؤول كل المسؤولية عن صحة البيانات التي يتم تعبئتها في هذه الاستمارة.
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-double-left"></i> مدى دقة البيانات يساعد الطالب على الحصول على المساعدة المناسبة.
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-angle-double-left"></i> في حال وجود أي أسئلة أو استفسارات يرجى مراجعة قسم شؤون الطلبة في الكلية.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#home">بيانات الطالب</a></li>
-                            <li><a data-toggle="tab" href="#menu1"> بيانات ولى الامر</a></li>
-                            <li><a data-toggle="tab" href="#menu2">افراد العائلة</a></li>
-                            <li><a data-toggle="tab" href="#menu3">الاخوة في الجامعات </a></li>
-                            <li><a data-toggle="tab" href="#menu4"> املاك العائلة ونوع السكن </a></li>
 
                         </ul>
-                        <br>
-                        <div class="col-md-12">
-                            <div class="tab-content">
-                                <div id="home" class="tab-pane fade in active">
-                                    <form class="form-horizontal form-bordered form-row-stripped" role="form" action="" method="get">
-                                        <input type="hidden" name="_token" value="BltUZZFtJDux2GlQWmeCYoF3FNYJYw9FwnnqkROT">
-                                        <div class="form-body">
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">اسم الطالب رباعياً :</label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                                <label class="control-label col-md-2">رقم الهوية :</label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">الرقم الأكاديمي : </label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                                <label class="control-label col-md-2">التخصص : </label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">الفصل الدراسي الحالي : </label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                                <label class="control-label col-md-2">العام الدراسي : </label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">رسوم الفصل الدراسي الحالي :</label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                                <label class="control-label col-md-2">رسوم متراكمة سابقة :</label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">    الجنس:    </label>
-                                                <div class="col-md-4">
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male" style="padding-left:110px;">ذكر</label>
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male">انثى</label>
-                                                </div>
-                                                <label class="control-label col-md-2">الحالة الاجتماعية</label>
-                                                <div class="col-md-4">
-                                                    <select class="form-control" id="sel1" name="sellist1">
-                                                        <option>اغزب</option>
-                                                        <option>متزوج </option>
-                                                        <option>مطلق</option>
-                                                        <option>ارمل</option>
-                                                    </select>
+                        <div class="row">
+                            <div id="home" class="tab-pane fade in active">
+                            <form class="form-horizontal form-bordered form-row-stripped" role="form" action="brouniv" method="post">
+                                                                    @csrf
+                                                                    <div class="form-body">
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-2">اسم الاخ/ت  : </label>
+                                                                            <div class="col-md-4">
+                                                                                <input  name="bro_name" type="text" class="form-control" >
+                                                                            </div>
+                                                                            <label class="control-label col-md-2">الجامعة/الكلية : </label>
+                                                                            <div class="col-md-4">
+                                                                                <input name="bro_college" type="text" class="form-control" >
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-2">المستوى :  </label>
+                                                                            <div class="col-md-4">
+                                                                                <input  name="bro_level" type="text" class="form-control" >
+                                                                            </div>
+                                                                            <label class="control-label col-md-2">اذا كان يحصل على مساعدات : </label>
+                                                                            <div class="col-md-4">
+                                                                                <input name="bro_get_help" type="text" class="form-control" >
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label class="control-label col-md-2">قيمة المساعدة : </label>
+                                                                            <div class="col-md-4">
+                                                                                <input  name="bro_aid" type="text" class="form-control" >
+                                                                            </div>
+                                                                            <label class="control-label col-md-2">ملاحظات : </label>
+                                                                            <div class="col-md-4">
+                                                                                <input name="bro_notes" type="text" class="form-control" >
+                                                                            </div>
+                                                                        </div>
+                                                                        <br>
+                                                                        <div class="form-actions">
+                                                                            <button  style="margin-right:400px;  " type="submit" class="btn green-jungle btn-outline active">أضافة البيانات </button>
+                                                                        </div>
+                                                                        <!--النهاية -->
+                                                                    </div>
+
+                                                                </form>
+                            <br>
+                            <br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="portlet box blue">
+                                            <div class="portlet-title">
+                                                <div class="caption">
+                                                    <i class="icon-calendar"></i>الاخوة الجامعين الذين ثم اضافتهم مسبقاً .
                                                 </div>
                                             </div>
+                                            <div class="portlet-body">
+                                                <div class="table-responsive">
+                                                    <table class="table">
 
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">العنوان بالكامل : </label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" value="" >
-                                                </div>
-                                                <label class="control-label col-md-2">رقم الهاتف : </label>
-                                                <div class="col-md-4">
-                                                    <input type="tel" class="form-control" >
-                                                </div>
-                                            </div>
+                                <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">اسم الاخ/ت الجامعي</th>
+                                    <th scope="col">الجامعة/الكلية</th>
+                                    <th scope="col">المستوى</th>
+                                    <th scope="col">هل يحصل على مساعدات</th>
+                                    <th scope="col">قيمة المساعدات</th>
+                                    <th scope="col">ملاحظات</th>
+                                    <th scope="col">تعديل </th>
+                                    <th scope="col">حذف </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                @foreach ($tasks as $task)
+                                    <tr>
+                                        <th scope="row">{{$task->id}}</th>
+                                        <td>{{$task->bro_name}}</td>
+                                        <td>{{$task->bro_college}}</td>
+                                        <td>{{$task->bro_level}}</td>
+                                        <td>{{$task->bro_get_help}}</td>
+                                        <td>{{$task->bro_aid}}</td>
+                                        <td>{{$task->bro_notes}}</td>
+                                        <td><a href="#">
+                                                <span class="glyphicon glyphicon-pencil"></span>
+                                            </a>
+                                            </td>
+                                        <td><a href="{{url('delete1/'.$task->id)}}">
 
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2"> مساعدات او اعفاءات سابقة : </label>
-                                                <div class="col-md-4">
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male" style="padding-left:80px;"> نعم  حصلت</label>
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male">لا لم احصل</label>
-                                                </div>
-                                                <label class="control-label col-md-2">مصدر الاعفاءات وقتيمتها : </label>
-                                                <div class="col-md-4">
-                                                    <input type="text" class="form-control" >
-                                                </div>
-                                            </div>
+                                                     <span class="glyphicon glyphicon-trash">
+                                                </span>
+                                            </a></td>
 
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">هل حصلة على قرض :</label>
-                                                <div class="col-md-4">
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male" style="padding-left:85px;">نعم  حصل </label>
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male">لا لم احصل </label>
-                                                </div>
-                                                <label class="control-label col-md-2">عدد المرات : </label>
-                                                <div class="col-md-4">
-                                                    <input type="number" class="form-control" >
-                                                </div>
-                                            </div>
+                                    </tr>
 
-                                            <div class="form-group">
-                                                <label class="control-label col-md-2">هل يعمل الطالب : </label>
-                                                <div class="col-md-4">
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male"style="padding-left:90px;"> نعم يعمل</label>
-                                                    <input type="radio" id="male" name="gender" value="male">
-                                                    <label for="male">لا يعمل</label>
-                                                </div>
-                                                <label class="control-label col-md-2">قيمة الدخل : </label>
-                                                <div class="col-md-4">
-                                                    <input type="number" class="form-control">
+                                @endforeach
+                                </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
-
-
-
-
-                                        </div>
-                                        <div class="form-actions">
-                                            <div class="container">
-                                                <!-- زر التالي والسابق-->
-                                                <div class="container">
-
-                                                    <ul class="pager">
-                                                        <!-- <li><a href="">السابق</a></li>-->
-                                                        <li><a href="#menu1">التالي</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </form>
-                                </div>
-
-
-
-                                <!-- بيانات ولى الامر-->
-                                <div id="menu1" class="tab-pane fade">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <form class="form-horizontal form-bordered form-row-stripped" role="form" action="" method="get">
-                                                <input type="hidden" name="_token" value="BltUZZFtJDux2GlQWmeCYoF3FNYJYw9FwnnqkROT">
-                                                <div class="form-body">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">اسم ولى امر الطالب/ة :</label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                        <label class="control-label col-md-2"> صلة القرابة :</label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">رقم هوية ولى  الامر : </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                        <label class="control-label col-md-2">   الحالة الصحية :    </label>
-                                                        <div class="col-md-4">
-                                                            <input type="radio" id="male" name="gender" value="male">
-                                                            <label for="male" style="padding-left:60px;">جيدة</label>
-                                                            <input type="radio" id="male" name="gender" value="male">
-                                                            <label for="male"></label>مريض </label>
-                                                        </div>
-
-                                                    </div>
-
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">   هل يعمل :    </label>
-                                                        <div class="col-md-4">
-                                                            <input type="radio" id="male" name="gender" value="male">
-                                                            <label for="male"style="padding-left:60px;">نعم</label>
-                                                            <input type="radio" id="male" name="gender" value="male">
-                                                            <label for="male"></label>لا</label>
-                                                        </div>
-                                                        <label class="control-label col-md-2">الدخل  ولى امر الطالب/ة : </label>
-                                                        <div class="col-md-4">
-                                                            <input type="tel" class="form-control" >
-                                                        </div>
-
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">مكان العمل :  </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-
-                                                    </div>
-
-
-
-                                                </div>
-                                                <div class="form-actions">
-                                                    <a href="" class="btn green-jungle btn-outline active"><i class="fa fa-edit"></i> التالي</a>
-                                                </div>
-                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- بيانات افراد العائلة -->
-                                <div id="menu2" class="tab-pane fade">
-
-                                    <div class="page-bar">
-                                        <ul class="page-breadcrumb">
-                                            <li>
-                                                <span> افراد العائلة التي تسكن في نفس المنزل </span>
-                                            </li>
-                                        </ul>
-
-                                    </div>
-                                    <br>
-
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <form class="form-horizontal form-bordered form-row-stripped" role="form" action="" method="get">
-                                                <input type="hidden" name="_token" value="BltUZZFtJDux2GlQWmeCYoF3FNYJYw9FwnnqkROT">
-                                                <div class="form-body">
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">الاسم رباعي :</label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                        <label class="control-label col-md-2">صلة القرابة :</label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">العمر</label>
-                                                        <div class="col-md-4">
-                                                            <input type="date" class="form-control">
-                                                        </div>
-                                                        <label class="control-label col-md-2">المستوى التعليمي : </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">المهنة : </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                        <label class="control-label col-md-2">الدخل الشهري : </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                        <label class="control-label col-md-2">قيمة المساعدة المقدمة لطالب : </label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control">
-                                                        </div>
-                                                        <label class="control-label col-md-2">ملاحظات</label>
-                                                        <div class="col-md-4">
-                                                            <input type="text" class="form-control" >
-                                                        </div>
-                                                    </div>
-
-
-                                            </form>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                                <!-- الاخوة في الجامعات-->
-
+                                <div class="form-actions">
+                                <button style="margin-right:405px;  "   type="button" class="btn green-jungle btn-outline active"><a href="{{url('parent')}}">السابق</a></button>
+                                <button    type="button" class="btn green-jungle btn-outline active"><a href="{{url('familyhouse')}}">التالي</a></button>
                             </div>
-                            <div id="menu3" class="tab-pane fade">
-                                <!--العنوان الاخوة -->
-                                <div class="page-bar">
-                                    <ul class="page-breadcrumb">
-                                        <li>
-                                            <span> الاخوة الذين يدرسون في جامعات اخرى </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- الامحتوى الاخوة -->
-                                <br>
-
-                                <form class="form-horizontal form-bordered form-row-stripped" role="form" action="create1" method="get">
-
-                                    <div class="form-body">
-                                        <div class="form-group">
-                                            <label class="control-label col-md-2">اسم الاخ/ت  : </label>
-                                            <div class="col-md-4">
-                                                <input  name="bro_name" type="text" class="form-control" >
-                                            </div>
-                                            <label class="control-label col-md-2">الجامعة/الكلية : </label>
-                                            <div class="col-md-4">
-                                                <input name="bro_college" type="text" class="form-control" >
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <label class="control-label col-md-2">المستوى :  </label>
-                                            <div class="col-md-4">
-                                                <input  name="bro_level" type="text" class="form-control" >
-                                            </div>
-                                            <label class="control-label col-md-2">اذا كان يحصل على مساعدات : </label>
-                                            <div class="col-md-4">
-                                                <input name="bro_get_help" type="text" class="form-control" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="control-label col-md-2">قيمة المساعدة : </label>
-                                            <div class="col-md-4">
-                                                <input  name="bro_aid" type="text" class="form-control" >
-                                            </div>
-                                            <label class="control-label col-md-2">ملاحظات : </label>
-                                            <div class="col-md-4">
-                                                <input name="bro_notes" type="text" class="form-control" >
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
-                                        <!--النهاية -->
-                                    </div>
-
-                                </form>
-                            </div>
-                            <!--املاك العائلة-->
-                            <div id="menu4" class="tab-pane fade">
-                                <div class="page-bar">
-                                    <ul class="page-breadcrumb">
-                                        <li>
-                                            <span>  املاك العائلة ونوع السكن </span>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <br>
-
-
-                                <form class="form-horizontal form-bordered form-row-stripped" role="form" action="" method="get">
-                                    <input type="hidden" name="_token" value="BltUZZFtJDux2GlQWmeCYoF3FNYJYw9FwnnqkROT">
-                                    <div class="form-body">
-                                        <div class="form-group">
-                                            <label class="control-label col-md-2">    نوع السكن :    </label>
-                                            <div class="col-md-4">
-                                                <input type="radio" id="male" name="gender" value="male">
-                                                <label for="male" style="padding-left:80px;">ملك </label>
-                                                <input type="radio" id="male" name="gender" value="male">
-                                                <label for="male">ايجار </label>
-                                            </div>
-                                            <label class="control-label col-md-2">املاك العائلة : </label>
-                                            <div class="col-md-4">
-                                                <select class="form-control" id="sel1" name="sellist1">
-                                                    <option>اراضي</option>
-                                                    <option>عقارات</option>
-                                                    <option>لايوجد </option>
-
-                                                </select>
-                                            </div>
-                                        </div>
-
-
-
-                                        <!--النهاية -->
-                                    </div>
-
-                                </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            </div>
-
-
-
-
-
-
-
-
-
                         </div>
                     </div>
+
+
+                    <div class="clearfix"></div>
                 </div>
+                <!-- END CONTENT BODY -->
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+    </div>
+    <div class="container">
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer">
+            <div class="page-footer-inner">
+                <a href="" onclick="window.open(this.href); return false;">كلية فلسطين التقنية - مركز الحاسوب</a>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
             </div>
         </div>
+        <!-- END FOOTER -->
     </div>
-
-
-    <div class="clearfix"></div>
-</div>
-<!-- END CONTENT BODY -->
-</div>
-<!-- END CONTENT -->
-</div>
-<!-- END CONTAINER -->
-</div>
-<div class="container">
-    <!-- BEGIN FOOTER -->
-    <div class="page-footer">
-        <div class="page-footer-inner">
-            <a href="" onclick="window.open(this.href); return false;">كلية فلسطين التقنية - مركز الحاسوب</a>
-        </div>
-        <div class="scroll-to-top">
-            <i class="icon-arrow-up"></i>
-        </div>
-    </div>
-    <!-- END FOOTER -->
-</div>
 
 </div>
 
